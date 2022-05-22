@@ -1,0 +1,14 @@
+
+GET http://localhost:3000/contacts
+
+###
+
+GET https://cse341-api.herokuapp.com/contacts
+
+###
+
+GET http://localhost:3000/toDoList
+
+###
+
+GET https://mid-term-cs341.herokuapp.com/toDoList
