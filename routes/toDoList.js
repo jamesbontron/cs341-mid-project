@@ -1,14 +1,14 @@
 const routes = require('express').Router();
-const contactsController = require('../controllers/toDoList');
+const taskController = require('../controllers/toDoList');
 
-routes.get('/', contactsController.getAll);
+routes.get('/', taskController.getAll);
 
-routes.get('/:id', contactsController.getSingle);
+routes.get('/:id', taskController.getSingle);
 
-routes.post('/', contactsController.createTask);
+routes.post('/', taskController.createTask);
 
-routes.put('/:id', contactsController.updateTask);
+routes.put('/:id', taskController.updateTask);
 
-routes.delete('/:id', contactsController.deleteTask);
+routes.delete('/:id', taskController.deleteTask);
 
 module.exports = routes;
