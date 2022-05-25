@@ -52,10 +52,10 @@
                 "status": {
                   "example": "any"
                 },
-                "start-date": {
+                "startDate": {
                   "example": "any"
                 },
-                "end-date": {
+                "endDate": {
                   "example": "any"
                 }
               }
@@ -119,10 +119,10 @@
                 "status": {
                   "example": "any"
                 },
-                "start-date": {
+                "startDate": {
                   "example": "any"
                 },
-                "end-date": {
+                "endDate": {
                   "example": "any"
                 }
               }

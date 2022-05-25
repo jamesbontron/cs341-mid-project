@@ -38,8 +38,8 @@ const createTask = async (req, res) => {
       task: req.body.task,
       description: req.body.description,
       status: req.body.status,
-      startdate: req.body.start-date,
-      enddate: req.body.end-date,
+      startdate: req.body.startDate,
+      enddate: req.body.endDate,
     };
     //push the task array to the database
     const response = await mongodb.getCollection().insertOne(toDoTask);
@@ -62,8 +62,8 @@ const updateTask = async (req, res) => {
       task: req.body.task,
       description: req.body.description,
       status: req.body.status,
-      startdate: req.body.start-date,
-      enddate: req.body.end-date,
+      startdate: req.body.startDate,
+      enddate: req.body.endDate,
     };
     //push the toDotask array to the database and replace it with the old task from the database. You have to specify the toDotaskID
     const response = await mongodb.getCollection().replaceOne({ _id: toDoListId }, toDoTask);

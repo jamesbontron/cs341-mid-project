@@ -12,3 +12,17 @@ GET http://localhost:3000/toDoList
 ###
 
 GET https://mid-term-cs341.herokuapp.com/toDoList
+
+
+
+###Post a contact
+POST http://localhost:3000/toDoList HTTP/1.1
+content-type: application/json
+
+{
+    "task":"Go Shopping",
+    "description": "I need milk, chocolate and cookies for breakfast",
+    "status":"To Do",
+    "startDate":"25/05/2022",
+    "endDate":"26/05/2022"
+}
