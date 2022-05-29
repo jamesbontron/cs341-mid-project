@@ -1,5 +1,6 @@
 const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
+//Remove try catch and use IF for error handling if I want to be more specific about the errors in each part of the code  Remove 'then'p when using result.toArray()
 
 const getAll = async (req, res) => {
   try {

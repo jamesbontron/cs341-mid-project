@@ -5,8 +5,8 @@ const doc = {
     title: 'To Do App',
     description: 'To Do List API'
   },
-  host: 'localhost:3000',
-  schemes: ['http']
+  host: 'mid-term-cs341.herokuapp.com',
+  schemes: ['https']
 };
 
 const outputFile = './swagger.json';
