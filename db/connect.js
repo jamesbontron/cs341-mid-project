@@ -12,12 +12,13 @@ const initDatabase = () => {
   MongoClient.connect(process.env.MONGODB_URL, function (err, client) {
     if (err) throw err;
     _client = client;
-    _collection = client.db('toDoApp').collection('toDoList');
+    _collection = client.db('toDoApp');
     console.log('DB Connected Successfully');
   });
 };
 
-const getCollection = () => {
+const getCollection = (table) => {
+  _collection = client.db('toDoApp').collection(table);
   return _collection;
 };
 
