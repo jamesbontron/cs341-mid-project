@@ -1,10 +1,11 @@
 const routes = require('express').Router();
+const { ensureAuth, ensureGuest } = require('../middleware/auth')
 
 routes.use('/', require('./swagger'));
 routes.use('/toDoList', require('./toDoList'));
 routes.use('/auth', require('./auth'));
-/*
-const { ensureAuth, ensureGuest } = require('../middleware/auth')
+
+
 
 // @desc    Login/Landing page
 // @route   GET /
@@ -25,6 +26,6 @@ routes.get('/dashboard', ensureAuth, async (req, res) => {
     console.error(err)
     res.render('error/500')
   }
-})*/
+})
 
 module.exports = routes
