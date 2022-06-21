@@ -29,7 +29,7 @@ app
     next();
   })
   .use('/', require('./routes'))
-  .use('/auth', require('./routes/auth'));
+  //.use('/auth', require('./auth'));
 
 connect.initDatabase();
 app.listen(port, () => {
