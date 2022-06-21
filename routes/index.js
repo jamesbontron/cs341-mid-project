@@ -8,7 +8,7 @@ const { ensureAuth, ensureGuest } = require('../middleware/auth')
 
 // @desc    Login/Landing page
 // @route   GET /
-router.get('/', ensureGuest, (req, res) => {
+routes.get('/', ensureGuest, (req, res) => {
   res.render('login', {
     layout: 'login',
   })
@@ -16,7 +16,7 @@ router.get('/', ensureGuest, (req, res) => {
 
 // @desc    Dashboard
 // @route   GET /dashboard
-router.get('/dashboard', ensureAuth, async (req, res) => {
+routes.get('/dashboard', ensureAuth, async (req, res) => {
   try {
     res.render('dashboard', {
       name: req.user.firstName
@@ -27,4 +27,4 @@ router.get('/dashboard', ensureAuth, async (req, res) => {
   }
 })
 
-module.exports = router
+//module.exports = routes
